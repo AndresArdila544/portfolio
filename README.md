@@ -1,73 +1,118 @@
-# React + TypeScript + Vite
+# Andres Ardila - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my work as a Software Engineer. Built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## 🌐 Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit the portfolio at: [https://AndresArdila544.github.io/portfolio/](https://AndresArdila544.github.io/portfolio/)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **Dark Mode Support** - Toggle between light and dark themes with persistent preference
+- **Responsive Design** - Fully responsive layout optimized for all devices
+- **Active Navigation** - Navigation highlights the current section as you scroll
+- **Smooth Scrolling** - Seamless navigation between sections
+- **Scroll to Top** - Floating button appears when scrolling down
+- **Project Showcase** - Detailed project cards with links to repositories and reports
+- **Experience Timeline** - Professional experience at Lyft and DXC Technology
+- **Skills & Technologies** - Comprehensive display of technical skills
+- **Education & Certifications** - Academic achievements and AWS certification
+- **Contact Information** - Easy ways to get in touch
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **CSS3** - Custom styling with CSS variables for theming
+- **GitHub Pages** - Hosting
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/AndresArdila544/portfolio.git
+cd portfolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## 📦 Build & Deploy
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `dist` directory.
+
+### Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+This will build the project and deploy it to GitHub Pages using the `gh-pages` package.
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── public/          # Static assets
+├── src/
+│   ├── assets/      # Images and PDFs
+│   ├── App.tsx      # Main application component
+│   ├── App.css      # Application styles
+│   ├── index.css    # Global styles
+│   └── main.tsx     # Application entry point
+├── index.html       # HTML template
+├── package.json     # Dependencies and scripts
+└── vite.config.ts   # Vite configuration
+```
+
+## 🎨 Customization
+
+The portfolio uses CSS variables for easy theming. You can customize colors, spacing, and other design tokens in `src/App.css`:
+
+```css
+:root {
+  --accent: #3a86ff;
+  --bg: #ffffff;
+  --text: #0f0f0f;
+  /* ... */
+}
+```
+
+## 📄 License
+
+This project is private and personal.
+
+## 👤 Author
+
+**Andres Ricardo Ardila Agudelo**
+
+- Email: andres.ardila.agudelo@gmail.com
+- LinkedIn: [linkedin.com/in/andres-ardila-7b5350130](https://www.linkedin.com/in/andres-ardila-7b5350130)
+- GitHub: [github.com/AndresArdila544](https://github.com/AndresArdila544)
+
+---
+
+Built with ❤️ using React and TypeScript
